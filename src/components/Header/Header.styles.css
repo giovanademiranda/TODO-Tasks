@@ -1,0 +1,17 @@
+.header {
+  background: var(--gray-700);
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0; 
+}
+.header img {
+  align-items: center;
+  justify-content: flex-start;
+  height: 2rem;
+}
+.header strong {
+  align-items: center;
+  padding: 1rem;
+  justify-content: center;
+  color: var(--blue);
+}
