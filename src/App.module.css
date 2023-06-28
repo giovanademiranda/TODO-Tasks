@@ -1,12 +1,12 @@
 .wrapper {
-  max-width: 70rem;
+  width: 100%;
   margin: 2rem auto;
   padding: 0 1rem;
 
-  display: grid;
-  grid-template-columns: 256px 1fr;
+  display: flex;
   gap: 2rem;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center
 }
 @media (max-width: 768px) {
   html {

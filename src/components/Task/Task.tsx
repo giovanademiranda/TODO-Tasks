@@ -1,24 +1,19 @@
-import { Trash } from 'phosphor-react';
-import { useState } from 'react';
 
-export function Task({task}: TaskType){
-  const [task, setTask] = useState([])
+export interface TaskType {
+  id: string;
+  title: string;
+  isComplete: boolean;
+}
 
-  function handleDeleteTasks() {
-    onDeleteTasks(content);
-  }
-  function deleteTask(taskToDelete: string) {
-    const taskWithoutDeletedOne = task.filter((task) => {
-      return task !== taskToDelete;
-    });
-    setTask(taskWithoutDeletedOne);
-  }
+interface TaskProps {
+  task: TaskType;
+}
 
+export function Task({task}: TaskProps){
+  
   return (
-    <div className={styles.task}>
-      <button onClick={handleDeleteTasks} title="Deletar tarefa">
-        <Trash size={24} />
-      </button>
+    <div>
+      oi
     </div>
   )
 }

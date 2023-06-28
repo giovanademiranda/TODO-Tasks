@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
-import styles from './App.styles.css';
+import styles from './App.module.css';
 import { Header } from './components/Header/Header';
-import { AddNewTask } from './components/NewTask/AddNewTask';
+import { AddNewTask } from './components/NewTask/NewTask';
 import './global.css';
 
 const tasks: TaskType[] = [
@@ -30,9 +30,7 @@ function App() {
     <div>
       <Header />
       <div className={styles.wrapper}>
-        <main>
-          <AddNewTask/>
-        </main>
+        <AddNewTask />
       </div>
     </div>
   )
