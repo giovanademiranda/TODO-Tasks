@@ -30,6 +30,9 @@
   color: var(--gray-100);
   font-weight: 600;
 }
+.newTask svg {
+  color: var(--gray-100);
+}
 .newTask button:hover {
   background: var(--blue);
 }

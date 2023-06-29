@@ -1,3 +1,6 @@
+import { Trash } from 'phosphor-react';
+import Checkbox from '../Checkbox/Checkbox';
+import styles from './Task.module.css';
 
 export interface TaskType {
   id: string;
@@ -12,8 +15,10 @@ interface TaskProps {
 export function Task({task}: TaskProps){
   
   return (
-    <div>
-      oi
-    </div>
+    <article className={styles.task}>
+      <Checkbox />
+      <p>teste</p>
+      <Trash size={24}/>
+    </article>
   )
 }

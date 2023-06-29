@@ -1,0 +1,35 @@
+.progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-radius: 0.5rem;
+  border-bottom: 1px solid var(--gray-400);
+  width: 46rem;
+}
+.tarefas {
+  display: flex;
+  gap: 0.5rem;
+  color: var(--blue);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.tarefas p {
+  padding: 0.125rem 0.5rem;
+  border-radius: 62rem;
+  background: var(--gray-400);
+  color: var(--gray-200)
+}
+.concluidas {
+  display: flex;
+
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--purple);
+}
+.concluidas p {
+  padding: 0.125rem 0.5rem;
+  border-radius: 62rem;
+  background: var(--gray-400);
+  color: var(--gray-200)
+}
