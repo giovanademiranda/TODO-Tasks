@@ -2,6 +2,8 @@ import { v4 as uuidv4 } from 'uuid';
 import styles from './App.module.css';
 import { Header } from './components/Header/Header';
 import { AddNewTask } from './components/NewTask/NewTask';
+import { Placeholder } from './components/Placeholder/Placeholder';
+import { TaskType } from './components/Task/Task';
 import './global.css';
 
 const tasks: TaskType[] = [
@@ -22,7 +24,7 @@ const tasks: TaskType[] = [
   },
 ]
 
-//deletar por id
+//deletar task por id
 tasks.filter(task => task.isComplete)
 
 function App() {
@@ -32,6 +34,9 @@ function App() {
       <div className={styles.wrapper}>
         <AddNewTask />
       </div>
+      <main>
+        <Placeholder />
+      </main>
     </div>
   )
 }
