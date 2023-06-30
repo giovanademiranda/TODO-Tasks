@@ -1,16 +1,21 @@
-import styles from './Progress.module.css'
+import styles from './Progress.module.css';
 
-export function Progress() {
+interface ProgressProps {
+  taskCompleted: number;
+  taskCreated: number;
+}
+
+export function Progress({taskCompleted = 0, taskCreated = 0}: ProgressProps) {
   return (
     <>
       <div className={styles.progress}>
         <div className={styles.tarefas}>
           <strong >Tarefas criadas</strong>
-          <p>0</p>
+          <p>{taskCreated}</p>
         </div>
         <div className={styles.concluidas}>
           <strong>Concluídas</strong>
-          <p>0</p>
+          <p>{taskCompleted}</p>
         </div>
       </div>
     </>
