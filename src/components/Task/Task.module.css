@@ -19,3 +19,9 @@
   border-radius: 0.25rem;
   color: var(--gray-300)
 }
+.task svg:hover {
+  background: var(--gray-400);
+  border-radius: 0.25rem;
+  color: var(--danger);
+  cursor: pointer;
+}

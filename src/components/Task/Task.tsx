@@ -16,7 +16,7 @@ export function Task({task}: TaskProps){
   
   return (
     <article className={styles.task}>
-      <Checkbox />
+      <Checkbox id={task.id}/>
       <p>teste</p>
       <Trash size={24}/>
     </article>
