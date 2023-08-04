@@ -1,4 +1,4 @@
-#To-do, Desafio 1
+# To-do, Desafio 1
 Este é o primeiro desafio do curso Ignite da Rocketseat, no módulo de React.js. O objetivo deste desafio é implementar uma to-do list, uma aplicação simples mas muito comum que ajuda a entender os conceitos básicos de manipulação de estado no React.
 
 ## Sobre o Projeto
